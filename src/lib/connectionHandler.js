@@ -51,7 +51,7 @@ export default async function connectionHandler(ws) {
       } catch (error) {
         send({
           id,
-          cmd: `response_${id}`,
+          cmd: `Response`,
           error,
         });
       }
